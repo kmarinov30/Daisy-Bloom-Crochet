@@ -1,8 +1,9 @@
+import Navbar from './components/Navbar';
 import './css/style.css'
 
 function App() {
   return (
-    <p className="test">test</p>
+    <Navbar />
   );
 }
 
