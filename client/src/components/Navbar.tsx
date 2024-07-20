@@ -16,10 +16,9 @@ const Navbar: React.FC = () => {
             </div>
             <div className="navbar-center">
                 <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-                    <a href="#home" onClick={isOpen ? toggleMenu : () => ''}>Home</a>
-                    <a href="#about" onClick={isOpen ? toggleMenu : () => ''}>About</a>
-                    <a href="#services" onClick={isOpen ? toggleMenu : () => ''}>Services</a>
-                    <a href="#contact" onClick={isOpen ? toggleMenu : () => ''}>Contact</a>
+                    <a href="#home" onClick={isOpen ? toggleMenu : () => ''}>Начало</a>
+                    <a href="#services" onClick={isOpen ? toggleMenu : () => ''}>Продукти</a>
+                    <a href="#contact" onClick={isOpen ? toggleMenu : () => ''}>Контакти</a>
                     {
                         isOpen &&
                         <a href="#checkout" onClick={toggleMenu}>

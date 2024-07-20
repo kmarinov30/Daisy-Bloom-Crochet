@@ -1,10 +1,12 @@
 @import "colors";
-@import "metrics";
 @import "./reset.scss";
 @import "./components/navbar.scss";
+@import "./components/footer.scss";
+@import "./components/hero.scss";
 
 html {
   font-size: 62.5%;
   margin: 0;
   padding: 0;
+  background-color: #f3e3e8;
 }

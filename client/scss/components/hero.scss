@@ -1,0 +1,89 @@
+@import "../animations.scss";
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 100px;
+  background-color: #f3e3e8;
+  color: $dark-pink;
+
+  .hero-content {
+    max-width: 50%;
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.7rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-button {
+      padding: 10px 20px;
+      font-size: 1.6rem;
+      // background-color: $watermelon-pink;
+      background: linear-gradient(
+        100deg,
+        $dark-pink,
+        $watermelon-pink,
+        $dark-pink,
+        $watermelon-pink
+      );
+      background-size: 400% 400% !important;
+      animation: gradient 15s ease infinite;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #b3007d;
+      }
+    }
+  }
+
+  .hero-image {
+    max-width: 50%;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+    .hero-content,
+    .hero-image {
+      max-width: 100%;
+    }
+
+    .hero-content {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+
+    .hero-content {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      .hero-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
