@@ -3,10 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 100px;
+  padding: 0 10rem;
   background-color: #f3e3e8;
   color: $dark-pink;
-
   .hero-content {
     max-width: 50%;
 
@@ -69,7 +68,7 @@
   }
 
   @media (max-width: 480px) {
-    padding: 10px;
+    padding: 10px 20px;
 
     .hero-content {
       h1 {

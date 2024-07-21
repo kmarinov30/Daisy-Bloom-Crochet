@@ -11,20 +11,20 @@ const Footer: React.FC = () => {
                     <h2 className="footer__title">За Нас</h2>
                     <p className="footer__text">Създаваме уникални ръчно плетени изделия с висококачествени материали и внимание към детайла. Благодарим ви, че споделяте нашата страст!</p>
                 </div>
-                <div className="footer__section footer__section--links">
+                {/* <div className="footer__section footer__section--links">
                     <h2 className="footer__title">Бързи Линкове</h2>
                     <ul className="footer__list">
                         <li className="footer__list-item"><a href="#" className="footer__link">Начало</a></li>
                         <li className="footer__list-item"><a href="#" className="footer__link">Продукти</a></li>
                         <li className="footer__list-item"><a href="#" className="footer__link">Контакти</a></li>
                     </ul>
-                </div>
+                </div> */}
                 <div className="footer__section footer__section--links">
                     <h2 className="footer__title">За Клиенти</h2>
                     <ul className="footer__list">
-                        <li className="footer__list-item"><a href="#" className="footer__link">Начало</a></li>
-                        <li className="footer__list-item"><a href="#" className="footer__link">Продукти</a></li>
-                        <li className="footer__list-item"><a href="#" className="footer__link">Контакти</a></li>
+                        <li className="footer__list-item"><a href="#" className="footer__link">Условия за ползване</a></li>
+                        <li className="footer__list-item"><a href="#" className="footer__link">Защита на личните данни</a></li>
+                        <li className="footer__list-item"><a href="#" className="footer__link">Право на отказ от поръчка</a></li>
                     </ul>
                 </div>
                 <div className="footer__section footer__section--social">

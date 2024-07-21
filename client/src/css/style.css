@@ -81,8 +81,6 @@ select {
   }
 }
 .navbar {
-  position: fixed;
-  top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -186,22 +184,19 @@ select {
   color: #a0caf0;
   padding: 40px 0 0 0;
   font-family: "Roboto", sans-serif;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   border-top: 1px solid #fad5a5;
 }
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .footer {
-    padding: 10px 0 0 0;
+    position: relative;
   }
 }
 .footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1200px;
-  margin: auto;
+  justify-content: space-around;
   padding: 0 20px;
 }
 @media (min-width: 768px) {
@@ -215,11 +210,11 @@ select {
   margin: 20px 0;
   text-align: center;
 }
-@media (min-width: 768px) {
-  .footer__section {
-    text-align: left;
-    margin: 20px;
-  }
+.footer__section--social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .footer__section--about .footer__title, .footer__section--links .footer__title, .footer__section--social .footer__title {
   font-size: 1.5rem; /* 24px */
@@ -309,7 +304,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 100px;
+  padding: 0 10rem;
   background-color: #f3e3e8;
   color: #a05578;
 }
@@ -361,7 +356,7 @@ select {
 }
 @media (max-width: 480px) {
   .hero-section {
-    padding: 10px;
+    padding: 10px 20px;
   }
   .hero-section .hero-content h1 {
     font-size: 2rem;
@@ -380,6 +375,16 @@ html {
   margin: 0;
   padding: 0;
   background-color: #f3e3e8;
+}
+
+#root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
 }
 
 /*# sourceMappingURL=style.css.map */
