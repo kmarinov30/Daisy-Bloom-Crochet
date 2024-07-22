@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import logo from '../images/logo.png';
 import checkout from '../images/checkout.png';
+import { Link } from 'react-router-dom';
+
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,26 +14,26 @@ const Navbar: React.FC = () => {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <a href="#home"><img src={logo} alt="Logo" /></a>
+                <Link to="#home"><img src={logo} alt="Logo" /></Link>
             </div>
             <div className="navbar-center">
                 <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-                    <a href="#home" onClick={isOpen ? toggleMenu : () => ''}>Начало</a>
-                    <a href="#services" onClick={isOpen ? toggleMenu : () => ''}>Продукти</a>
-                    <a href="#contact" onClick={isOpen ? toggleMenu : () => ''}>Контакти</a>
+                    <Link to="/" onClick={isOpen ? toggleMenu : () => ''}>Начало</Link>
+                    <Link to="/products" onClick={isOpen ? toggleMenu : () => ''}>Продукти</Link>
+                    <Link to="/contacts" onClick={isOpen ? toggleMenu : () => ''}>Контакти</Link>
                     {
                         isOpen &&
-                        <a href="#checkout" onClick={toggleMenu}>
+                        <Link to="/checkout" onClick={toggleMenu}>
                             <img src={checkout} alt="Checkout" className="checkout-icon" />
-                        </a>
+                        </Link>
                     }
                 </div>
             </div>
             {
                 !isOpen && <div className="navbar-checkout">
-                    <a href="#checkout">
+                    <Link to="#checkout">
                         <img src={checkout} alt="Checkout" className="checkout-icon" />
-                    </a>
+                    </Link>
                 </div>
             }
 
