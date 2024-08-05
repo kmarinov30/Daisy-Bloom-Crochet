@@ -15,39 +15,39 @@ const products: Product[] = [
         id: 1,
         name: "Product 1",
         description: "This is a great product.",
-        image: "https://via.placeholder.com/300",
-        category: "Tops",
+        image: "https://img.kwcdn.com/product/fancy/09cac911-435c-4492-8efe-225f76cac167.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp",
+        category: "Долни дрехи",
     },
     {
         id: 2,
         name: "Product 2",
         description: "This is another great product.",
-        image: "https://via.placeholder.com/300",
-        category: "Bottoms",
+        image: "https://images4-a.ravelrycache.com/uploads/randomoliveblog/766780876/book-sleeve-cover-02_1_medium2.jpg",
+        category: "Аксесуари",
     },
     {
         id: 3,
         name: "Product 3",
         description: "Yet another awesome product.",
-        image: "https://via.placeholder.com/300",
-        category: "Accessories",
+        image: "https://lapose.us/cdn/shop/files/Nyree-Knit-Top-LaPose-1823.jpg?v=1710670407",
+        category: "Горни дрехи",
     },
 ];
 
 // Define categories for filtering
-const categories = ["All", "Tops", "Bottoms", "Accessories"];
+const categories = ["Всички", "Аксесуари", "Горни дрехи", "Долни дрехи"];
 
 const ProductCatalog: React.FC = () => {
     const [searchTerm, setSearchTerm] = useState<string>(""); // State for search term
     const [sortOption, setSortOption] = useState<string>("name-asc"); // State for sort option
-    const [selectedCategory, setSelectedCategory] = useState<string>("All"); // State for selected category
+    const [selectedCategory, setSelectedCategory] = useState<string>("Всички"); // State for selected category
 
     // Filter and sort products based on search term, category, and sort option
     const filteredProducts = products
         .filter(
             (product) =>
                 product.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
-                (selectedCategory === "All" || product.category === selectedCategory)
+                (selectedCategory === "Всички" || product.category === selectedCategory)
         )
         .sort((a, b) => {
             if (sortOption === "name-asc") {
@@ -59,11 +59,11 @@ const ProductCatalog: React.FC = () => {
 
     return (
         <div className="product-catalog">
-            <h1>Product Catalog</h1>
+            <h1>Плетива</h1>
             <div className="controls">
                 <input
                     type="text"
-                    placeholder="Search products..."
+                    placeholder="Потърси продукт..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="search-bar"
@@ -73,8 +73,8 @@ const ProductCatalog: React.FC = () => {
                     onChange={(e) => setSortOption(e.target.value)}
                     className="sort-dropdown"
                 >
-                    <option value="name-asc">Sort by Name: A-Z</option>
-                    <option value="name-desc">Sort by Name: Z-A</option>
+                    <option value="name-asc">Сортиране по име: А-Я</option>
+                    <option value="name-desc">Сортиране по име: Я-А</option>
                 </select>
             </div>
             {/* Horizontal categories for smaller screens */}
@@ -93,7 +93,7 @@ const ProductCatalog: React.FC = () => {
             <div className="main-content">
                 {/* Vertical categories for larger screens */}
                 <div className="categories vertical">
-                    <h2>Categories</h2>
+                    <h2>Категории</h2>
                     <ul>
                         {categories.map((category) => (
                             <li
@@ -117,12 +117,12 @@ const ProductCatalog: React.FC = () => {
                                 />
                                 <h2 className="product-name">{product.name}</h2>
                                 <p className="product-description">{product.description}</p>
-                                <button className="details-button">Details</button>
+                                <button className="details-button">Детайли</button>
                             </div>
                         ))
                     ) : (
                         <p className="no-products-message">
-                            No products found matching your criteria.
+                            Няма намерени продукти.
                         </p>
                     )}
                 </div>

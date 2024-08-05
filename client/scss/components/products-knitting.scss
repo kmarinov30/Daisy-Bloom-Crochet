@@ -28,7 +28,7 @@
 
     &:focus {
       outline: none;
-      border-color: #007bff;
+      border-color: $blush;
     }
   }
 
@@ -39,10 +39,11 @@
     border-radius: 8px;
     transition: border-color 0.3s;
     cursor: pointer;
+    color: $dark-pink;
 
     &:focus {
       outline: none;
-      border-color: #007bff;
+      border-color: $blush;
     }
   }
 
@@ -67,10 +68,11 @@
         font-size: 1rem;
         cursor: pointer;
         transition: background-color 0.3s, color 0.3s;
+        color: $dark-pink;
 
         &:hover,
         &.active {
-          background-color: #007bff;
+          background-color: $blush;
           color: white;
         }
       }
@@ -101,10 +103,11 @@
           border-radius: 8px;
           cursor: pointer;
           transition: background-color 0.3s, color 0.3s;
+          color: $dark-pink;
 
           &:hover,
           &.active {
-            background-color: #007bff;
+            background-color: $blush;
             color: white;
           }
         }
@@ -127,7 +130,7 @@
 
       &:focus {
         outline: none;
-        border-color: #007bff;
+        border-color: $blush;
       }
     }
   }
@@ -144,7 +147,7 @@
       flex-basis: 100%;
       text-align: center;
       font-size: 1.5rem;
-      color: #555;
+      color: $dark-pink;
       margin-top: 50px;
     }
   }
@@ -178,26 +181,27 @@
       font-size: 1.8rem;
       margin: 15px 0;
       font-weight: bold;
+      color: $dark-pink;
     }
 
     .product-description {
       font-size: 1.1rem;
-      color: #555;
+      color: $dark-pink;
       margin: 10px 0;
     }
 
     .details-button {
       padding: 12px 18px;
       font-size: 1.2rem;
-      background-color: #007bff;
-      color: white;
+      background-color: $blush;
+      color: $dark-pink;
       border: none;
       border-radius: 6px;
       cursor: pointer;
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: #0056b3;
+        color: white;
       }
     }
   }

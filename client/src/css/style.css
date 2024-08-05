@@ -454,7 +454,7 @@ select {
 }
 .product-catalog .search-bar:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #f9c0c0;
 }
 .product-catalog .sort-dropdown {
   padding: 10px;
@@ -463,10 +463,11 @@ select {
   border-radius: 8px;
   transition: border-color 0.3s;
   cursor: pointer;
+  color: #a05578;
 }
 .product-catalog .sort-dropdown:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #f9c0c0;
 }
 .product-catalog .main-content {
   display: flex;
@@ -487,9 +488,10 @@ select {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  color: #a05578;
 }
 .product-catalog .categories.horizontal .category-button:hover, .product-catalog .categories.horizontal .category-button.active {
-  background-color: #007bff;
+  background-color: #f9c0c0;
   color: white;
 }
 .product-catalog .categories.vertical {
@@ -516,9 +518,10 @@ select {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  color: #a05578;
 }
 .product-catalog .categories.vertical ul li:hover, .product-catalog .categories.vertical ul li.active {
-  background-color: #007bff;
+  background-color: #f9c0c0;
   color: white;
 }
 .product-catalog .categories-dropdown {
@@ -536,7 +539,7 @@ select {
 }
 .product-catalog .categories-dropdown .category-select:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: #f9c0c0;
 }
 .product-catalog .product-grid {
   flex: 1;
@@ -550,7 +553,7 @@ select {
   flex-basis: 100%;
   text-align: center;
   font-size: 1.5rem;
-  color: #555;
+  color: #a05578;
   margin-top: 50px;
 }
 .product-catalog .product-card {
@@ -580,24 +583,25 @@ select {
   font-size: 1.8rem;
   margin: 15px 0;
   font-weight: bold;
+  color: #a05578;
 }
 .product-catalog .product-card .product-description {
   font-size: 1.1rem;
-  color: #555;
+  color: #a05578;
   margin: 10px 0;
 }
 .product-catalog .product-card .details-button {
   padding: 12px 18px;
   font-size: 1.2rem;
-  background-color: #007bff;
-  color: white;
+  background-color: #f9c0c0;
+  color: #a05578;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 .product-catalog .product-card .details-button:hover {
-  background-color: #0056b3;
+  color: white;
 }
 
 @media (max-width: 1200px) {
