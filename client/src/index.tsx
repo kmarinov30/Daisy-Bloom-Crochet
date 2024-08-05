@@ -8,6 +8,9 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Error from './components/Error';
 import Products from './components/Products';
+import ProductsKnitting from './components/ProductsKnitting';
+import ProductsYarn from './components/ProductsYarn';
+import ProductCatalog from './components/ProductsKnitting';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -27,6 +30,22 @@ const router = createBrowserRouter([{
   element: <>
     <Navbar />
     <Products />
+    <Footer />
+  </>
+},
+{
+  path: '/products-knitting',
+  element: <>
+    <Navbar />
+    <ProductCatalog />
+    <Footer />
+  </>
+},
+{
+  path: '/products-yarn',
+  element: <>
+    <Navbar />
+    <ProductsYarn />
     <Footer />
   </>
 }
